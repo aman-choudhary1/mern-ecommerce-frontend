@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import ProductCard from "../components/product-card";
 import {
   useCategoriesQuery,
@@ -10,6 +9,7 @@ import { Skeleton } from "../components/loader";
 import { useDispatch } from "react-redux";
 import { CartItem } from "../types/types";
 import { addToCart } from "../redux/reducer/cartReducer";
+import { useState } from "react";
 
 const Search = () => {
   const {
